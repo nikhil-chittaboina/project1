@@ -1,0 +1,196 @@
+{% extends 'RUser/Header.html' %}
+{% block userblock %}
+
+
+<link rel="icon" href="images/icon.png" type="image/x-icon" />
+
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+
+
+
+		<style>
+			body {background-color:#000000;}
+			.container-fluid {padding:50px;}
+			.container{background-color:white;padding:50px;   }
+			#title{font-family: 'Fredoka One', cursive;
+}
+			.text-uppercase{
+			font-family: 'Righteous', cursive;
+
+			}
+			.tweettext{
+
+    border: 2px solid yellowgreen;
+    width: 904px;
+    height: 202px;
+    overflow: scroll;
+    background-color:;
+}
+		.style1 {
+	color: #FF0000;
+	font-weight: bold;
+}
+.style4 {color: #FFFF00; font-weight: bold; }
+.style6 {
+	font-size: 24px;
+	color: #FFFF00;
+	font-weight: bold;
+}
+        </style>
+
+	<body>
+	<div class="container-fluid">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-md-5">
+
+                   <form role="form" method="POST" >
+						{% csrf_token %}
+						<fieldset>
+							<p class="text-uppercase pull-center style1">PREDICTION OF STUDENT BEHAVIOR CHANGE TYPE !!! </p>
+                            <hr>
+
+                                {% csrf_token %}
+                                <table width="1042" align="center">
+                                  <tr>
+                                    <td height="44" colspan="4" bgcolor="#FF0000"><div align="center" class="style4">FEED DATASET DETAILS HERE !!! </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td width="229" height="44" bgcolor="#FF0000"><div align="center" class="style4">Fid</div></td>
+                                    <td width="273"><div align="center">
+                                      <input type="text" name="Fid">
+                                    </div></td>
+                                    <td width="271" bgcolor="#FF0000"><div align="center" class="style4">Certification_Course</div></td>
+                                    <td width="249"><div align="center">
+                                      <input type="text" name="Certification_Course">
+                                    </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center" class="style4">Gender</div></td>
+                                    <td><div align="center">
+                                      <input type="text" name="Gender">
+                                    </div></td>
+                                    <td bgcolor="#FF0000"><div align="center" class="style4">Department</div></td>
+                                    <td><div align="center">
+                                      <input type="text" name="Department">
+                                    </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center" class="style4">Height_CM</div></td>
+                                    <td><div align="center">
+                                      <input type="text" name="Height_CM">
+                                    </div></td>
+                                    <td bgcolor="#FF0000"><div align="center" class="style4">Weight_KG</div></td>
+                                    <td><div align="center">
+                                      <input type="text" name="Weight_KG">
+                                    </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center" class="style4">Tenth_Mark</div></td>
+                                    <td><div align="center">
+                                      <input type="text" name="Tenth_Mark">
+                                    </div></td>
+                                    <td bgcolor="#FF0000"><div align="center" class="style4">Twelth_Mark</div></td>
+                                    <td><div align="center">
+                                      <input type="text" name="Twelth_Mark">
+                                    </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center" class="style4">
+                                      <div align="center">Enter hobbies</div>
+                                    </div></td>
+                                    <td><div align="center">
+                                      <input type="text" name="hobbies">
+                                    </div></td>
+                                    <td bgcolor="#FF0000"><div align="center" class="style4">daily_studing_time</div></td>
+                                    <td><div align="center">
+                                      <input type="text" name="daily_studing_time">
+                                    </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center" class="style4">prefer_to_study_in</div></td>
+                                    <td><div align="center">
+                                      <input type="text" name="prefer_to_study_in">
+                                    </div></td>
+                                    <td bgcolor="#FF0000"><div align="center" class="style4">like_your_degree</div></td>
+                                    <td><div align="center">
+                                      <input type="text" name="like_your_degree">
+                                    </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center" class="style4">social_medai_video</div></td>
+                                    <td><div align="center">
+                                      <input type="text" name="social_medai_video">
+                                    </div></td>
+                                    <td bgcolor="#FF0000"><div align="center" class="style4"><span class="style2">Enter Travelling_Time</span></div></td>
+                                    <td><div align="center">
+                                      <input type="text" name="Travelling_Time">
+                                    </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center" class="style4">Stress_Level</div></td>
+                                    <td><div align="center">
+                                      <input type="text" name="Stress_Level">
+                                    </div></td>
+                                    <td bgcolor="#FF0000"><div align="center" class="style4">Financial_Status</div></td>
+                                    <td><div align="center">
+                                      <input type="text" name="Financial_Status">
+                                    </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center" class="style4">alcohol_consumption</div></td>
+                                    <td><div align="center">
+                                      <input type="text" name="alcohol_consumption">
+                                    </div></td>
+                                    <td bgcolor="#FF0000"><div align="center" class="style4">part_time_job</div></td>
+                                    <td><div align="center">
+                                      <input type="text" name="part_time_job">
+                                    </div></td>
+                                  </tr>
+  <td><p>&nbsp; </p>
+          <p>
+            <input name="submit" type="submit" class="style1" value="Predict">
+        </p></td>
+  </tr>
+                                </table>
+					 </fieldset>
+				  </form>
+
+
+ 					<form role="form" method="POST" >
+						{% csrf_token %}
+						<fieldset>
+
+                            <hr>
+                            <div>
+                              <table width="914" height="48" border="0" align="center" >
+                                    <tr><td width="643" bgcolor="#FF0000"><div align="center"><span class="style6">PREDICTION OF STUDENT BEHAVIOR CHANGE TYPE</span> :: </div></td>
+
+
+
+                                      <td width="261" bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center"><strong>{{objs}}</strong></div></td>
+                                    </tr>
+                      </table>
+
+
+
+                            </div>
+
+
+
+
+						</fieldset>
+					</form>
+				</div>
+
+				<div class="col-md-2">
+					<!-------null------>
+				</div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+    <tr>

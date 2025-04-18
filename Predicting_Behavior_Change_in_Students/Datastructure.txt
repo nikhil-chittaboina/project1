@@ -1,0 +1,42 @@
+Predicting Behavior Change in Students With Special Education Needs Using Multimodal Learning Analytics
+
+IEEE Transaction on Machine Learning,Volume:11,Issue Date:22.June.2023
+
+
+Applied behavior analysis (ABA), multimodal learning analytics (MMLA), predictive
+modeling, special education needs (SEN).
+
+
+
+Predicting_Behavior_Change_in_Students
+
+
+predicting_behavior_change_in_students
+
+
+
+predicting_behavior_change
+
+
+
+Fid	
+Certification_Course	
+Gender	
+Department	
+Height_CM	
+Weight_KG	
+Tenth_Mark	
+Twelth_Mark	
+hobbies	
+daily_studing_time	
+prefer_to_study_in	
+like_your_degree	
+social_medai_video	
+Travelling_Time 	
+Stress_Level 	
+Financial_Status	
+alcohol_consumption	
+part_time_job
+Prediction
+
+
