@@ -29,7 +29,7 @@ Instructions to Run:
 Contributors:
 - Nikhil Chittaboina
 
-GitHub: https://github.com/Nikhil5L4  
+GitHub: https://github.com/nikhil-chittaboina 
 LinkedIn: https://www.linkedin.com/in/nikhil-chittaboina-78a88a32b/
 
 License: For educational use only
